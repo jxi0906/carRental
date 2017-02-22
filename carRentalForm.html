@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- AUTHOR: Junhui Xie
+    CREATED: 2015-04-05
+    UPDATED: 2015-04-10 -->
+
+<html>
+    <head>
+        <title>Tried and True Car Rental</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Junhui Xie">
+        <meta name="description" content="Assignment 3">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+    </head>
+    <body>
+        <div>
+            <h1>Tried and True Car Rental</h1>
+            <h3>Respected Customer,</h3>    
+        </div>
+        <div>
+            <form name="carRental" action="rentalInvoice.php" method="POST">
+                <table id="name">
+                    <tr>
+                        <td>User's Name:</td>
+                        <td><input type="text" name="name" /></td>
+                    </tr>
+                </table>
+                <hr/>
+                <table id="info">
+                    <tr>
+                        <td>Select Car:</td>
+                        <td>
+                            <select name="carType">
+                                <option value="Compact">Compact</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Luxury">Luxury</option>
+                            </select>
+                        </td>    
+                    </tr>
+                    <tr>
+                        <td>Select Number of Days:</td>
+                        <td>
+                            <input type="radio" name="dayNum" 
+                                   value="1 day" />1 day<br/>
+                            <input type="radio" name="dayNum"
+                                   value="2 days" />2 days<br/>
+                            <input type="radio" name="dayNum"
+                                   value="3 days" />3 days
+                        </td>
+                    </tr>    
+                </table>
+                <table id="cost">
+                    <tr>
+                        <td>Select Options:</td>
+                    </tr> 
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="options[]"
+                                   value="GPS">GPS($14.30/day)<br/>
+                            <input type="checkbox" name="options[]"
+                                   value="Child Safety Seat">Child Safety Seat($11.65/day)<br/>
+                            <input type="checkbox" name="options[]"
+                                   value="Insurance">Rental Insurance($8.05/day)
+                        </td>
+                    </tr>
+                </table>
+                <table id="button">
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Book It!">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

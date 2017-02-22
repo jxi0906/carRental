@@ -1,0 +1,39 @@
+    /*  AUTHOR: Junhui Xie
+   CREATED: 2015-04-05
+   UPDATED: 2015-04-10 */
+
+h1 {
+    color: mediumslateblue;
+    text-shadow: 0 0 2px darkviolet;
+}
+
+h3 {
+    font-style: italic;
+}
+
+#name {
+    font-family: Arial;
+}
+
+#info {
+    background-color: aquamarine;
+    font-family: Arial;
+    position: relative;
+    top: 8px;
+    width: 255px;
+}
+
+#cost {
+    background-color: lightsalmon;
+    font-family: Arial;
+    position: relative;
+    left: 270px;
+    bottom: 81px;
+}
+
+#button {
+    font-family: Arial;
+    position: relative;
+    left: 192px;
+    bottom: 64px;
+}
